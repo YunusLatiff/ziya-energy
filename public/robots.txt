@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ziyaenergy.co.za/sitemap.xml

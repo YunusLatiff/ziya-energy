@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ziya-energy",
+  "main": "worker.js",
+  "compatibility_date": "2026-08-13",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS"
+  },
+  "vars": {
+    "FORM_TO_EMAIL": "yunus@ziyaenergy.co.za",
+    "FORM_FROM_EMAIL": "Ziya Energy Website <website@forms.ziyaenergy.co.za>",
+    "WEB_ANALYTICS_TOKEN": "",
+    "TURNSTILE_SITE_KEY": "SET_THIS_IN_CLOUDFLARE"
+  }
+}
