@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://ziyaenergy.co.za/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://ziyaenergy.co.za/solutions.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://ziyaenergy.co.za/industries.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://ziyaenergy.co.za/approach.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://ziyaenergy.co.za/about.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://ziyaenergy.co.za/contact.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ziyaenergy.co.za/about</loc></url>
+  <url><loc>https://ziyaenergy.co.za/approach</loc></url>
+  <url><loc>https://ziyaenergy.co.za/assessment-guide</loc></url>
+  <url><loc>https://ziyaenergy.co.za/battery-storage</loc></url>
+  <url><loc>https://ziyaenergy.co.za/commercial-solar</loc></url>
+  <url><loc>https://ziyaenergy.co.za/contact</loc></url>
+  <url><loc>https://ziyaenergy.co.za/hybrid-energy</loc></url>
+  <url><loc>https://ziyaenergy.co.za/</loc></url>
+  <url><loc>https://ziyaenergy.co.za/industries</loc></url>
+  <url><loc>https://ziyaenergy.co.za/power-purchase-agreements</loc></url>
+  <url><loc>https://ziyaenergy.co.za/privacy</loc></url>
+  <url><loc>https://ziyaenergy.co.za/solutions</loc></url>
 </urlset>
