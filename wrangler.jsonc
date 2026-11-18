@@ -13,7 +13,7 @@
     ]
   },
   "vars": {
-    "FORM_TO_EMAIL": "yunus@ziyaenergy.co.za",
+    "FORM_TO_EMAIL": "sales@ziyaenergy.co.za",
     "FORM_FROM_EMAIL": "Ziya Energy Website <website@forms.ziyaenergy.co.za>",
     "WEB_ANALYTICS_TOKEN": "",
     "TURNSTILE_SITE_KEY": "0x4AAAAAAEO4zk4hh5bCaes2",

@@ -29,7 +29,7 @@ This package uses Workers with Static Assets. Uploading only `public` to Pages o
 
 The original site already used **Resend** for email and **Cloudflare Turnstile** for anti-spam verification. These still need real account configuration:
 
-1. In Resend, verify your sending domain (`forms.ziyaenergy.co.za` by default) and add the exact DNS records Resend supplies. Confirm that the configured sender is authorised and that you can send to `yunus@ziyaenergy.co.za`.
+1. In Resend, verify your sending domain (`forms.ziyaenergy.co.za` by default) and add the exact DNS records Resend supplies. Confirm that the configured sender is authorised and that you can send to `sales@ziyaenergy.co.za`.
 2. In Cloudflare Turnstile, create or use a widget for `ziyaenergy.co.za` and `www.ziyaenergy.co.za`.
 3. Set these values in the existing Worker settings (Variables and Secrets):
 
@@ -38,7 +38,7 @@ The original site already used **Resend** for email and **Cloudflare Turnstile**
 | `TURNSTILE_SITE_KEY` | Variable | Public site key from your Turnstile widget |
 | `TURNSTILE_SECRET` | Secret | Matching private secret |
 | `RESEND_API_KEY` | Secret | Your email sending API key |
-| `FORM_TO_EMAIL` | Variable | `yunus@ziyaenergy.co.za` (already in config) |
+| `FORM_TO_EMAIL` | Variable | `sales@ziyaenergy.co.za` (already in config) |
 | `FORM_FROM_EMAIL` | Variable | `Ziya Energy Website <website@forms.ziyaenergy.co.za>` (already in config; change if needed) |
 | `ALLOWED_HOSTNAMES` | Variable, optional | Defaults to `ziyaenergy.co.za,www.ziyaenergy.co.za`. Add the exact staging hostname only if testing that domain. |
 

@@ -20,7 +20,7 @@ async function sendEmail(env,f,reference){
   const response=await fetch('https://api.resend.com/emails',{
     method:'POST',signal:AbortSignal.timeout(12000),
     headers:{Authorization:`Bearer ${env.RESEND_API_KEY}`,'Content-Type':'application/json','Idempotency-Key':`ziya-enquiry-${reference}`},
-    body:JSON.stringify({from:env.FORM_FROM_EMAIL||'Ziya Energy Website <website@forms.ziyaenergy.co.za>',to:[env.FORM_TO_EMAIL||'yunus@ziyaenergy.co.za'],reply_to:f.email,
+    body:JSON.stringify({from:env.FORM_FROM_EMAIL||'Ziya Energy Website <website@forms.ziyaenergy.co.za>',to:[env.FORM_TO_EMAIL||'sales@ziyaenergy.co.za'],reply_to:f.email,
       subject:`Ziya Energy enquiry — ${f.company.replace(/[\r\n]/g,' ')}`,
       html:`<!doctype html><html><body style="font-family:Arial,sans-serif;color:#17181b"><h1>Ziya Energy — new enquiry</h1><p>Reference: ${escapeHtml(reference)}</p><table style="border-collapse:collapse">${rows}</table></body></html>`,
       text:`Ziya Energy enquiry\nReference: ${reference}\n`+fields.filter(([,key])=>f[key]).map(([label,key])=>`${label}: ${f[key]}`).join('\n')})});
@@ -32,7 +32,7 @@ async function contact(request,env,url){
   if(request.method!=='POST')return json({ok:false,error:'Method not allowed.'},405);
   const origin=request.headers.get('Origin');
   if(origin && origin!==url.origin)return json({ok:false,error:'Please submit from this website.'},403);
-  if(!configured(env))return json({ok:false,error:'Online enquiries are temporarily unavailable. Please email yunus@ziyaenergy.co.za.'},503);
+  if(!configured(env))return json({ok:false,error:'Online enquiries are temporarily unavailable. Please email sales@ziyaenergy.co.za.'},503);
   if(!(request.headers.get('Content-Type')||'').toLowerCase().includes('application/json'))return json({ok:false,error:'Please use the website enquiry form.'},415);
   let body;try{body=await readBody(request);}catch(e){return json({ok:false,error:'Invalid form data.'},e.message==='TOO_LARGE'?413:400);}
   if(clean(body.website,100))return json({ok:true});
