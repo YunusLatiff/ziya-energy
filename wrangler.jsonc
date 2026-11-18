@@ -16,7 +16,21 @@
     "FORM_TO_EMAIL": "yunus@ziyaenergy.co.za",
     "FORM_FROM_EMAIL": "Ziya Energy Website <website@forms.ziyaenergy.co.za>",
     "WEB_ANALYTICS_TOKEN": "",
-    "TURNSTILE_SITE_KEY": "0x4AAAAAAEO4zk4hh5bCaes2"
+    "TURNSTILE_SITE_KEY": "0x4AAAAAAEO4zk4hh5bCaes2",
+    "AFFILIATE_ADMIN_EMAIL": "yunus@ziyaenergy.co.za",
+    "AFFILIATE_ORIGIN": "https://ziyaenergy.co.za",
+    "GA_MEASUREMENT_ID": "G-FBH4JRYNVE"
   },
-  "keep_vars": true
+  "keep_vars": true,
+  "observability": {
+    "enabled": true
+  },
+  "d1_databases": [
+    {
+      "binding": "AFFILIATES_DB",
+      "database_name": "ziya-affiliates",
+      "database_id": "bfce1da6-5086-4353-9b44-155d2ae35c1b",
+      "migrations_dir": "migrations"
+    }
+  ]
 }

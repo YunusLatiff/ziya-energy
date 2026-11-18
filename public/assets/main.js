@@ -134,7 +134,7 @@ estimator?.addEventListener('submit', e => {
   setStatus('Preparing the secure enquiry form…');
   const config = await configPromise;
   if (!config.contactReady) {
-    setStatus('Online enquiries are temporarily unavailable. Please use the email, phone or WhatsApp links to contact Yunus.', 'error');
+    setStatus('Online enquiries are temporarily unavailable. Please use the email link to contact Ziya Energy.', 'error');
     submit.textContent = 'PLEASE CONTACT US DIRECTLY';return;
   }
   try {
@@ -156,7 +156,7 @@ estimator?.addEventListener('submit', e => {
       'error-callback':() => {verified=false;submit.disabled=true;setStatus('The security check could not load. Refresh or contact us directly.','error');}
     });
     setStatus('Complete the security check to send your enquiry.');
-  } catch { setStatus('The security check could not load. Refresh or contact us by email, phone or WhatsApp.','error');return; }
+  } catch { setStatus('The security check could not load. Refresh or contact us by email.','error');return; }
   form.addEventListener('submit', async e => {
     e.preventDefault();if(pending || !form.reportValidity()) return;
     if(!verified) {setStatus('Please complete the security check.','error');return;}
@@ -171,7 +171,7 @@ estimator?.addEventListener('submit', e => {
       const result=await response.json().catch(()=>({}));
       if(!response.ok || !result.ok) throw new Error(result.error || 'Your enquiry could not be confirmed. Please retry or contact us directly.');
       form.reset();storage.remove('ziya-starting-point');
-      form.innerHTML='<div class="success-confirmation" tabindex="-1"><div class="label">ENQUIRY RECEIVED</div><h2>Thank you.</h2><p>Your enquiry has been accepted. Yunus will review your information and contact you about the next step.</p><p class="reference"></p><p>For anything urgent, call <a class="text-link" href="tel:+27685667460">068 566 7460</a>.</p><a class="btn" href="/">RETURN TO HOMEPAGE ↗</a></div>';
+      form.innerHTML='<div class="success-confirmation" tabindex="-1"><div class="label">ENQUIRY RECEIVED</div><h2>Thank you.</h2><p>Your enquiry has been accepted. Our team will review your information and contact you about the next step.</p><p class="reference"></p><a class="btn" href="/">RETURN TO HOMEPAGE ↗</a></div>';
       form.querySelector('.reference').textContent='Reference: '+(result.reference || submissionId);
       form.querySelector('.success-confirmation').focus();
       trackEvent('generate_lead');
@@ -184,3 +184,5 @@ estimator?.addEventListener('submit', e => {
     } finally {pending=false;}
   });
 })();
+
+document.querySelectorAll('a[href="/affiliates"]').forEach(a=>a.addEventListener('click',()=>trackEvent('affiliate_cta_click')));

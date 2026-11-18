@@ -1,9 +1,10 @@
+import { affiliateApi } from './affiliate-api.js';
 const JSON_HEADERS = {'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'};
 const json=(data,status=200)=>new Response(JSON.stringify(data),{status,headers:JSON_HEADERS});
 const clean=(value,max=500)=>typeof value==='string'?value.trim().replace(/[\u0000-\u0008\u000b\u000c\u000e-\u001f]/g,'').slice(0,max):'';
 const escapeHtml=value=>String(value??'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&#039;');
 const configured=env=>Boolean(env.RESEND_API_KEY && env.TURNSTILE_SECRET && env.TURNSTILE_SITE_KEY && !env.TURNSTILE_SITE_KEY.startsWith('SET_'));
-const allowedEvents=new Set(['assessment_cta_click','whatsapp_click','phone_click','email_click','quick_estimator_completed','generate_lead']);
+const allowedEvents=new Set(['assessment_cta_click','whatsapp_click','phone_click','email_click','quick_estimator_completed','generate_lead','affiliate_cta_click']);
 async function readBody(request,max=16384){
   if(Number(request.headers.get('Content-Length'))>max)throw new Error('TOO_LARGE');
   const reader=request.body?.getReader();if(!reader)throw new Error('BAD_BODY');
@@ -31,7 +32,7 @@ async function contact(request,env,url){
   if(request.method!=='POST')return json({ok:false,error:'Method not allowed.'},405);
   const origin=request.headers.get('Origin');
   if(origin && origin!==url.origin)return json({ok:false,error:'Please submit from this website.'},403);
-  if(!configured(env))return json({ok:false,error:'Online enquiries are temporarily unavailable. Please email yunus@ziyaenergy.co.za or call 068 566 7460.'},503);
+  if(!configured(env))return json({ok:false,error:'Online enquiries are temporarily unavailable. Please email yunus@ziyaenergy.co.za.'},503);
   if(!(request.headers.get('Content-Type')||'').toLowerCase().includes('application/json'))return json({ok:false,error:'Please use the website enquiry form.'},415);
   let body;try{body=await readBody(request);}catch(e){return json({ok:false,error:'Invalid form data.'},e.message==='TOO_LARGE'?413:400);}
   if(clean(body.website,100))return json({ok:true});
@@ -75,6 +76,7 @@ async function contact(request,env,url){
 export default {
   async fetch(request,env){
     const url=new URL(request.url);
+    if(url.pathname.startsWith('/api/affiliates/'))return affiliateApi(request,env);
     if(url.pathname==='/api/config' && request.method==='GET')return json({contactReady:configured(env),turnstileSiteKey:configured(env)?env.TURNSTILE_SITE_KEY:'',analyticsToken:env.WEB_ANALYTICS_TOKEN||'',gaMeasurementId:env.GA_MEASUREMENT_ID||'',eventLogging:env.ENABLE_EVENT_LOGGING==='true'});
     if(url.pathname==='/api/contact')return contact(request,env,url);
     if(url.pathname==='/api/event' && request.method==='POST'){

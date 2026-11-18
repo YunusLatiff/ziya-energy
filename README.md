@@ -1,6 +1,6 @@
 # Ziya Energy v7 — website fixes
 
-This is the complete Cloudflare Worker + static-assets project. It preserves the black/gold identity and the existing contact details. The production target is the existing `ziya-energy` Worker serving `ziyaenergy.co.za`, connected to `YunusLatiff/ziya-energy` on `main`. See QA.md for installation verification.
+This is the complete Cloudflare Worker + static-assets project. It preserves the black/gold identity. Public personal names, phone numbers and WhatsApp links have been removed. The production target is the existing `ziya-energy` Worker serving `ziyaenergy.co.za`, connected to `YunusLatiff/ziya-energy` on `main`. See QA.md for installation verification.
 
 ## Start here (Windows PowerShell)
 
@@ -104,7 +104,7 @@ The code now includes clean canonical URLs, matching internal links, sitemap, ro
 
 ## Content for you to confirm
 
-The updated About page uses Yunus Latiff as the contact, the existing email and existing phone number. It describes assessment and coordination of qualified project partners, consistent with the original Approach page. No founder title, professional registration, completed project, testimonial, office address, savings guarantee, free assessment or response deadline has been invented.
+The About page uses the Ziya Energy team as the contact, with the existing business email.
 
 Before launch, confirm your preferred role description, legal business name/registration details, actual service coverage and privacy practices. Add verified team credentials, authorised partner details, project photography and genuine case studies when available. Stock imagery remains illustrative; it is not presented as Ziya project evidence. Privacy text is a plain-language description of the supplied site, not a legal certification.
 
@@ -127,3 +127,7 @@ Before launch, confirm your preferred role description, legal business name/regi
 Run `npm.cmd test` for backend unit tests. Tests mock security and email providers; they never send live emails. Browser fixtures are in `tests/browser.test.cjs` and require Playwright plus a local running preview. See `QA.md` for checks actually completed on this release.
 
 A local preview cannot verify production credentials, DNS, domain attachments, Turnstile configuration or inbox delivery. Those require a real post-deployment test. The original stock photos are bundled locally in public/assets/images. See IMAGE-SOURCES.md for their source URLs.
+
+## Affiliate portal and private CRM
+
+See [AFFILIATE_PORTAL.md](AFFILIATE_PORTAL.md) for account access, isolation, commission rules, schema and deployment verification.
