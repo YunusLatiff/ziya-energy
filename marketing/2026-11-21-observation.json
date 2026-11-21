@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-21",
+  "account": "ziya_energy",
+  "followers": 6,
+  "source": "Windsor.ai cached response",
+  "source_fetched_at_utc": "2026-11-21T06:20:58",
+  "baseline_followers": 6,
+  "net_change_observed": 0,
+  "target_2026_11_30": 100,
+  "gap": 94,
+  "required_per_day_including_nov21_to_nov30": 9.4,
+  "target_2026_12_31": 400,
+  "gap_year_end": 394,
+  "comments_returned": 0,
+  "prior_posts": [
+    {
+      "media_id": "18079844498727248",
+      "url": "https://www.instagram.com/p/Df9d1BlEcu7/",
+      "reach": 90,
+      "shares": 2,
+      "saves": 0,
+      "follows": 0
+    },
+    {
+      "media_id": "18203538064383042",
+      "url": "https://www.instagram.com/p/Df9dvcZjIpB/",
+      "reach": 3,
+      "shares": 0,
+      "saves": 0,
+      "follows": 0
+    }
+  ],
+  "decision": "Test solar-versus-backup education with explicit follow/save CTA. Early two-post sample is insufficient to establish a winning content type.",
+  "creative": "Original AI-generated educational illustrations; no actual project representations.",
+  "today": {
+    "topic": "Solar panels versus batteries and backup",
+    "status": "Assets ready; publication result recorded separately"
+  },
+  "spend": 0,
+  "limitations": [
+    "Data labelled cached by connector; refresh unavailable on current plan.",
+    "No comments returned; does not prove comments absent outside cached data."
+  ]
+}
