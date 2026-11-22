@@ -1,0 +1,113 @@
+{
+  "date": "2026-11-22",
+  "account": "ziya_energy",
+  "source": "Windsor.ai cached response",
+  "followers": 6,
+  "baseline_followers": 6,
+  "net_change_observed": 0,
+  "data_fetched_at_utc": "2026-11-22T06:06:47",
+  "gap_to_100": 94,
+  "days_including_today_to_nov30": 9,
+  "required_daily_net_new_followers": 10.444444444444445,
+  "gap_to_400": 394,
+  "days_including_today_to_dec31": 40,
+  "required_daily_year_end": 9.85,
+  "media": [
+    {
+      "media_id": "18079844498727248",
+      "media_caption": "Preparing for solar or battery storage at your business?\n\nStart with the information that makes an energy assessment useful:\n• Recent electricity bills or prepaid records\n• Monthly consumption and electricity spend\n• Operating days and hours\n• Site location and available space\n• Existing solar, batteries or generators\n• Your main priority: costs, backup, expansion or a combination\n\nYou do not need a finished technical brief. Start with what you have, and Ziya Energy will help identify what needs to be assessed next.\n\nRead our business solar checklist:\nziyaenergy.co.za/business-solar-checklist\n\nDiscuss your facility:\nziyaenergy.co.za/contact\nsales@ziyaenergy.co.za\n\nSystem design, performance and funding options are assessed for each project.\n\n#ZiyaEnergy #CommercialSolar #BatteryStorage #SolarSouthAfrica #BusinessEnergy",
+      "media_permalink": "https://www.instagram.com/p/Df9d1BlEcu7/",
+      "timestamp": "2026-11-20T10:42:24+0000",
+      "media_reach": 102,
+      "media_shares": 2,
+      "media_saved": 0,
+      "media_follows": 0,
+      "data_fetched_at": "2026-11-22T06:06:47"
+    },
+    {
+      "media_id": "18203538064383042",
+      "media_caption": "Know a business or property owner exploring solar or battery storage?\n\nIntroduce them to Ziya Energy with their permission and earn 3% commission on completed deals.\n\nHow it works:\n1. Create your affiliate account and verify your email.\n2. Submit the client’s details with their permission.\n3. Track your own referrals, progress and commission status in your private portal.\n\nCommission is 3% of the confirmed final deal value, earned when Ziya Energy marks the deal completed. Payment status is recorded separately. Other affiliates cannot see your deals.\n\nExplore the programme: ziyaenergy.co.za/affiliate-programme\nCreate your account: ziyaenergy.co.za/affiliates\nQuestions: sales@ziyaenergy.co.za\n\n#ZiyaEnergy #SolarSouthAfrica #AffiliateProgramme #BusinessReferrals #CommercialSolar",
+      "media_permalink": "https://www.instagram.com/p/Df9dvcZjIpB/",
+      "timestamp": "2026-11-20T10:41:37+0000",
+      "media_reach": 7,
+      "media_shares": 0,
+      "media_saved": 0,
+      "media_follows": 0,
+      "data_fetched_at": "2026-11-22T06:06:47"
+    },
+    {
+      "media_id": "18116871058843938",
+      "media_caption": "Solar panels and backup power do different jobs.\n\n☀️ Solar panels generate electricity from sunlight.\n🔋 Batteries store energy for later use.\n\nA conventional grid-tied solar system may shut down during a grid outage—even when the sun is shining. Backup needs the right inverter, controls, wiring and system design.\n\nBefore choosing equipment, define the job:\n• Which loads must stay on?\n• How much power do they need at once?\n• For how long?\n• When does your business use the most energy?\n\nStart with those answers, then size the system around your operating profile.\n\nSave this before your next solar discussion. Follow @ziya_energy for practical solar and battery guidance for South African businesses.\n\nExplore your options: ziyaenergy.co.za/contact\nsales@ziyaenergy.co.za\n\n#ZiyaEnergy #CommercialSolar #BatteryStorage #SolarSouthAfrica #BusinessEnergy",
+      "media_permalink": "https://www.instagram.com/p/Df_lOwoCEDp/",
+      "timestamp": "2026-11-21T06:25:33+0000",
+      "media_reach": 5,
+      "media_shares": 0,
+      "media_saved": 0,
+      "media_follows": 0,
+      "data_fetched_at": "2026-11-22T06:06:47"
+    }
+  ],
+  "comments_returned": 0,
+  "spend": 0,
+  "decision": "No recorded follows yet. Test a two-slide actionable night-load checklist carousel with save/share/follow CTA rather than another single poster. Early results are not sufficient to infer a winning format.",
+  "creative": "Original AI-generated educational illustrations; not actual installations.",
+  "status": "Published confirmed",
+  "limitations": [
+    "Connector labels results cached and reports no on-demand refresh entitlement.",
+    "No comments returned; comment coverage may be incomplete."
+  ],
+  "today": {
+    "topic": "Business loads after sunset",
+    "format": "Two-slide carousel",
+    "feed": {
+      "media_id": "17980138926159253",
+      "url": "https://www.instagram.com/p/DgCIf9tiEaj/",
+      "published_at_utc": "2026-11-22T06:12:10+00:00",
+      "published_at_sast": "2026-11-22T08:12:10+02:00",
+      "caption": "What still needs power at your business after sunset?\n\nYour monthly electricity bill is a starting point. A night-load list helps explain where the energy is needed.\n\nSwipe for the checklist, then record:\n1. The equipment and its running power.\n2. When it operates and for how long.\n3. Which loads run at the same time.\n\nRefrigeration, security and essential lighting are examples—not a ready-made list for every site. Motors may also need extra power to start, and cycling equipment does not necessarily draw its rated power all night.\n\nBattery energy capacity (kWh) and the power needed at one time (kW) answer different questions. Usable capacity, losses, controls and the charging plan also matter. Measured load data helps turn the list into a suitable design.\n\nSave this for your next energy assessment, or share it with the person responsible for your facility.\n\nFollow @ziya_energy for practical solar and battery guidance for South African businesses.\n\nDiscuss your site: ziyaenergy.co.za/contact\nsales@ziyaenergy.co.za\n\n#ZiyaEnergy #CommercialSolar #BatteryStorage #SolarSouthAfrica #FacilitiesManagement",
+      "assets": [
+        "https://raw.githubusercontent.com/YunusLatiff/ziya-energy/364f5a43e673de5b963ce6e19b835f1c2c881b39/public/assets/marketing/2026-11-22/night-loads-01.jpg",
+        "https://raw.githubusercontent.com/YunusLatiff/ziya-energy/364f5a43e673de5b963ce6e19b835f1c2c881b39/public/assets/marketing/2026-11-22/night-loads-02.jpg"
+      ],
+      "confirmation": {
+        "result": "Published carousel post with 2 items to Instagram account 17841439950814320. Media id: 17980138926159253."
+      }
+    },
+    "story": {
+      "media_id": "18439227505199277",
+      "asset": "https://raw.githubusercontent.com/YunusLatiff/ziya-energy/364f5a43e673de5b963ce6e19b835f1c2c881b39/public/assets/marketing/2026-11-22/night-loads-story.jpg",
+      "confirmation": {
+        "result": "Published story to Instagram account 17841439950814320. Media id: 18439227505199277."
+      }
+    },
+    "new_feed_count": 1,
+    "new_story_count": 1
+  },
+  "next_test": "Check whether the actionable carousel receives saves, shares and attributed follows. Consider a concise educational Reel next, subject to production quality and available tooling. Do not infer a winning format from this small early sample.",
+  "publication_ledger": [
+    {
+      "date": "2026-11-20",
+      "media_id": "18079844498727248",
+      "url": "https://www.instagram.com/p/Df9d1BlEcu7/",
+      "topic": "Business solar checklist"
+    },
+    {
+      "date": "2026-11-20",
+      "media_id": "18203538064383042",
+      "url": "https://www.instagram.com/p/Df9dvcZjIpB/",
+      "topic": "Affiliate programme"
+    },
+    {
+      "date": "2026-11-21",
+      "media_id": "18116871058843938",
+      "url": "https://www.instagram.com/p/Df_lOwoCEDp/",
+      "topic": "Solar versus backup"
+    },
+    {
+      "date": "2026-11-22",
+      "media_id": "17980138926159253",
+      "url": "https://www.instagram.com/p/DgCIf9tiEaj/",
+      "topic": "Night-load checklist carousel"
+    }
+  ]
+}
